@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guilherme César Athayde — CV</title>
+    <meta
+      name="description"
+      content="Curriculum Vitae de Guilherme César Athayde, Desenvolvedor Full-Stack especializado em Node.js, TypeScript, React e Angular."
+    />
+    <meta
+      name="keywords"
+      content="Guilherme César Athayde, Full-Stack Developer, Node.js, TypeScript, React, Angular, CV, Currículo, Software Engineer"
+    />
+    <meta name="author" content="Guilherme César Athayde" />
+    <link rel="canonical" href="https://guiathayde.dev/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://guiathayde.dev/" />
+    <meta property="og:title" content="Guilherme César Athayde — CV" />
+    <meta
+      property="og:description"
+      content="Desenvolvedor Full-Stack focado em performance e escalabilidade. Confira meu currículo."
+    />
+    <meta
+      property="og:image"
+      content="https://guiathayde.dev/assets/cv-preview.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://guiathayde.dev/" />
+    <meta property="twitter:title" content="Guilherme César Athayde — CV" />
+    <meta
+      property="twitter:description"
+      content="Desenvolvedor Full-Stack focado em performance e escalabilidade. Confira meu currículo."
+    />
+    <meta
+      property="twitter:image"
+      content="https://guiathayde.dev/assets/cv-preview.png"
+    />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Guilherme César Athayde",
+        "jobTitle": "Full-Stack Developer",
+        "url": "https://guiathayde.dev",
+        "sameAs": [
+          "https://linkedin.com/in/gui-athayde",
+          "https://github.com/guiathayde"
+        ],
+        "description": "Full-Stack Developer experienced in web and mobile apps, APIs, and integrations. Focus on performance, scalability, and code quality."
+      }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RB4ZJ8PZ1R"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-RB4ZJ8PZ1R');
+    </script>
+
+    <style>
+      :root {
+        --bg: #0b0f17;
+        --card: #111827;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --line: rgba(255, 255, 255, 0.08);
+        --accent: #60a5fa;
+        --chip: rgba(96, 165, 250, 0.12);
+        --shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Arial,
+          'Noto Sans',
+          'Helvetica Neue',
+          sans-serif;
+        background:
+          radial-gradient(
+            1200px 600px at 15% 0%,
+            rgba(96, 165, 250, 0.18),
+            transparent 50%
+          ),
+          radial-gradient(
+            900px 500px at 85% 10%,
+            rgba(34, 197, 94, 0.12),
+            transparent 45%
+          ),
+          var(--bg);
+        color: var(--text);
+        line-height: 1.45;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .wrap {
+        max-width: 980px;
+        margin: 40px auto;
+        padding: 0 18px 60px;
+      }
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(10px);
+        background: rgba(11, 15, 23, 0.6);
+        border-bottom: 1px solid var(--line);
+      }
+      .topbar-inner {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 12px 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .brand {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      .brand strong {
+        font-size: 14px;
+        letter-spacing: 0.2px;
+      }
+      .brand span {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .actions {
+        display: flex;
+        gap: 10px;
+      }
+      .btn {
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--text);
+        padding: 10px 12px;
+        border-radius: 10px;
+        font-size: 13px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition:
+          transform 0.05s ease,
+          background 0.2s ease;
+        user-select: none;
+      }
+      .btn:hover {
+        background: rgba(255, 255, 255, 0.07);
+      }
+      .btn:active {
+        transform: translateY(1px);
+      }
+      .btn.primary {
+        background: rgba(96, 165, 250, 0.15);
+        border-color: rgba(96, 165, 250, 0.35);
+      }
+      .btn.primary:hover {
+        background: rgba(96, 165, 250, 0.22);
+      }
+      .icon {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+      }
+
+      .card {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.04),
+          rgba(255, 255, 255, 0.02)
+        );
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      header.cv-header {
+        padding: 26px 26px 18px;
+        border-bottom: 1px solid var(--line);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .name {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .name h1 {
+        margin: 0;
+        font-size: 28px;
+        letter-spacing: 0.2px;
+      }
+      .name p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 14px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .meta .dot {
+        color: rgba(255, 255, 255, 0.25);
+      }
+
+      .content {
+        padding: 22px 26px 26px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1.35fr 0.65fr;
+        gap: 18px;
+      }
+      @media (max-width: 860px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .section {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 16px;
+        background: rgba(0, 0, 0, 0.18);
+      }
+      .section h2 {
+        margin: 0 0 10px 0;
+        font-size: 13px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .p {
+        margin: 0;
+        color: rgba(229, 231, 235, 0.92);
+        font-size: 14px;
+      }
+      .muted {
+        color: var(--muted);
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+      .chip {
+        font-size: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: var(--chip);
+        border: 1px solid rgba(96, 165, 250, 0.25);
+        color: rgba(229, 231, 235, 0.95);
+      }
+
+      .role {
+        display: grid;
+        gap: 6px;
+        padding: 14px 0;
+        border-top: 1px solid var(--line);
+      }
+      .role:first-of-type {
+        border-top: 0;
+        padding-top: 0;
+      }
+      .role-title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 8px;
+      }
+      .role-title strong {
+        font-size: 14px;
+      }
+      .role-title span {
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .role-sub {
+        color: var(--muted);
+        font-size: 13px;
+      }
+      ul.bullets {
+        margin: 8px 0 0;
+        padding-left: 18px;
+      }
+      ul.bullets li {
+        margin: 6px 0;
+        color: rgba(229, 231, 235, 0.92);
+        font-size: 13.5px;
+      }
+
+      .mini-list {
+        margin: 0;
+        padding-left: 18px;
+      }
+      .mini-list li {
+        margin: 6px 0;
+        color: rgba(229, 231, 235, 0.92);
+        font-size: 13.5px;
+      }
+
+      /* PRINT (PDF) */
+      @media print {
+        :root {
+          --bg: #fff;
+          --text: #111;
+          --muted: #444;
+          --line: #ddd;
+          --card: #fff;
+        }
+        body {
+          background: #fff;
+          color: #111;
+        }
+        .topbar {
+          display: none !important;
+        }
+        .wrap {
+          margin: 0;
+          max-width: none;
+          padding: 0;
+        }
+        .card {
+          box-shadow: none;
+          border-radius: 0;
+          border: 0;
+        }
+        .section {
+          background: #fff;
+          border: 1px solid #e5e7eb;
+        }
+        a {
+          color: #111;
+          text-decoration: none;
+        }
+        .chip {
+          border: 1px solid #cbd5e1;
+          background: #f1f5f9;
+          color: #111;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <strong id="topbarName">Guilherme César Athayde</strong>
+          <span id="topbarRole">Full-Stack Developer • CV</span>
+        </div>
+        <div class="actions">
+          <button
+            class="btn"
+            id="langBtn"
+            type="button"
+            title="Switch language"
+          >
+            <span class="icon">🌐</span>
+            <span id="langBtnText">English</span>
+          </button>
+          <button
+            class="btn primary"
+            id="pdfBtn"
+            type="button"
+            title="Download as PDF"
+          >
+            <span class="icon">⬇️</span>
+            <span id="pdfBtnText">Download PDF</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main class="wrap">
+      <article class="card" id="cv">
+        <header class="cv-header">
+          <div class="name">
+            <h1 id="name">Guilherme César Athayde</h1>
+            <p id="headline">
+              Full-Stack Developer | Node.js | TypeScript | React | Angular |
+              React Native
+            </p>
+          </div>
+
+          <div class="meta" id="meta">
+            <span id="loc">São Carlos, SP, Brazil</span>
+            <span class="dot">•</span>
+            <span>
+              <a id="email" href="mailto:guiathayde303@gmail.com"
+                >guiathayde303@gmail.com</a
+              >
+            </span>
+            <span class="dot">•</span>
+            <span>
+              <a
+                id="linkedin"
+                href="https://www.linkedin.com/in/gui-athayde"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn</a
+              >
+            </span>
+            <span class="dot">•</span>
+            <span>
+              <a
+                id="github"
+                href="https://github.com/guiathayde"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+            </span>
+            <span class="dot">•</span>
+            <span>
+              <a
+                id="website"
+                href="https://guiathayde.dev"
+                target="_blank"
+                rel="noreferrer"
+                >Portfolio</a
+              >
+            </span>
+          </div>
+        </header>
+
+        <section class="content">
+          <div class="grid">
+            <!-- LEFT -->
+            <div style="display: grid; gap: 18px">
+              <section class="section">
+                <h2 id="sumTitle">Professional Summary</h2>
+                <p class="p" id="summary"></p>
+                <div class="chips" id="summaryChips"></div>
+              </section>
+
+              <section class="section">
+                <h2 id="expTitle">Experience</h2>
+
+                <div class="role">
+                  <div class="role-title">
+                    <strong id="exp1Title"></strong>
+                    <span id="exp1Date"></span>
+                  </div>
+                  <div class="role-sub" id="exp1Sub"></div>
+                  <ul class="bullets" id="exp1Bullets"></ul>
+                </div>
+
+                <div class="role">
+                  <div class="role-title">
+                    <strong id="exp2Title"></strong>
+                    <span id="exp2Date"></span>
+                  </div>
+                  <div class="role-sub" id="exp2Sub"></div>
+                  <ul class="bullets" id="exp2Bullets"></ul>
+                </div>
+
+                <div class="role">
+                  <div class="role-title">
+                    <strong id="exp3Title"></strong>
+                    <span id="exp3Date"></span>
+                  </div>
+                  <div class="role-sub" id="exp3Sub"></div>
+                  <ul class="bullets" id="exp3Bullets"></ul>
+                </div>
+
+                <div class="role">
+                  <div class="role-title">
+                    <strong id="exp4Title"></strong>
+                    <span id="exp4Date"></span>
+                  </div>
+                  <div class="role-sub" id="exp4Sub"></div>
+                  <ul class="bullets" id="exp4Bullets"></ul>
+                </div>
+              </section>
+            </div>
+
+            <!-- RIGHT -->
+            <div style="display: grid; gap: 18px">
+              <section class="section">
+                <h2 id="skillsTitle">Skills</h2>
+                <p class="p muted" id="skillsHint"></p>
+                <div class="chips" id="skillsChips"></div>
+              </section>
+
+              <section class="section">
+                <h2 id="eduTitle">Education</h2>
+                <ul class="mini-list" id="education"></ul>
+              </section>
+
+              <section class="section">
+                <h2 id="certTitle">Certificates</h2>
+                <ul class="mini-list" id="certs"></ul>
+              </section>
+
+              <section class="section">
+                <h2 id="langTitle">Languages</h2>
+                <ul class="mini-list" id="langs"></ul>
+              </section>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <script>
+      const DATA = {
+        pt: {
+          topbarRole: 'Full-Stack Developer • Currículo',
+          langBtnText: 'English',
+          pdfBtnText: 'Baixar PDF',
+          headline:
+            'Desenvolvedor Full Stack | Node.js | TypeScript | React | Angular | React Native',
+          summaryTitle: 'Resumo Profissional',
+          summary:
+            'Desenvolvedor Full Stack com experiência em aplicações web e mobile, APIs e integrações. Atuação em plataforma industrial/IoT, com foco em performance, escalabilidade e qualidade de código. Forte base em JavaScript/TypeScript, React/Angular e Node.js, com experiência prática em GraphQL, PostgreSQL e automação de testes.',
+          summaryChips: [
+            'JavaScript/TypeScript',
+            'React / Angular',
+            'Node.js',
+            'GraphQL',
+            'PostgreSQL',
+            'Testes (Playwright)',
+          ],
+          expTitle: 'Experiência',
+
+          exp1Title: 'Ubivis — Full-Stack Developer',
+          exp1Date: 'Out 2023 – Atual',
+          exp1Sub:
+            'São Carlos/Remoto • Plataforma de automação industrial e IoT',
+          exp1Bullets: [
+            'Desenvolvimento e manutenção de aplicações web e mobile com Angular e React Native.',
+            'Integração via Hasura/GraphQL com PostgreSQL, incluindo subscriptions para dados em tempo real.',
+            'Arquitetura de comunicação entre frontend e modelos de IA via PostgreSQL, melhorando o fluxo e a confiabilidade.',
+            'Automação de testes E2E com Playwright e suporte a dados de teste com Node.js + Prisma.',
+            'Colaboração ágil (Scrum), code review e versionamento/documentação via GitLab.',
+          ],
+
+          exp2Title: 'Amigos dos Jardinetes (UTFPR) — Full-Stack Developer',
+          exp2Date: 'Jul 2022 – Dez 2022',
+          exp2Sub: 'Projeto acadêmico • Plataforma web com backend escalável',
+          exp2Bullets: [
+            'Front-end em React para UX dinâmica e responsiva.',
+            'APIs REST em Node.js/Express e modelagem de dados em PostgreSQL.',
+            'Deploy em infraestrutura da universidade e organização de documentação técnica.',
+          ],
+
+          exp3Title: 'Ubivis — Android Developer (Intern)',
+          exp3Date: 'Set 2021 – Set 2023',
+          exp3Sub: 'Curitiba/Remoto • Apps Android para indústria',
+          exp3Bullets: [
+            'Manutenção e evolução de apps Android com Kotlin/Java (Android Studio).',
+            'Testes, correção de bugs, melhorias de performance e boas práticas de arquitetura.',
+            'Publicação e ciclo completo de releases (Google Play) com acompanhamento de feedback.',
+          ],
+
+          exp4Title:
+            'NÓS — Nosso Olhar Solidário (UTFPR) — Full-Stack Developer',
+          exp4Date: 'Out 2020 – Mar 2023',
+          exp4Sub:
+            'App mobile durante a pandemia • Doações e necessidades de organizações',
+          exp4Bullets: [
+            'Aplicativo React Native conectando doadores a organizações cadastradas.',
+            'Backend com Firebase e Node.js/Express, com MongoDB em partes do projeto.',
+            'UI/UX com Figma e organização em Scrum.',
+          ],
+
+          skillsTitle: 'Competências',
+          skillsHint: 'Stack principal e ferramentas utilizadas no dia a dia:',
+          skills: [
+            'Node.js',
+            'TypeScript',
+            'JavaScript',
+            'React',
+            'Angular',
+            'React Native',
+            'PostgreSQL',
+            'MongoDB',
+            'GraphQL/Hasura',
+            'Docker',
+            'Git/GitLab',
+            'Playwright',
+            'Firebase',
+            'Figma',
+          ],
+
+          eduTitle: 'Formação',
+          education: [
+            'Bacharelado em Ciência da Computação — UFSCar (2023 – 2026)',
+            'Engenharia da Computação — UTFPR (2020 – 2022)',
+          ],
+
+          certTitle: 'Certificados',
+          certs: [
+            'ReactJS — <a href="https://app.rocketseat.com.br/certificates/b4227e4c-6985-4e93-8387-e956c5a97fed" target="_blank" rel="noreferrer">Rocketseat</a>',
+            'Bootcamp GoStack 14 (Node.js, ReactJS, React Native) — <a href="https://app.rocketseat.com.br/certificates/3d090152-ef80-4c8c-b2f4-907c572bd1d8" target="_blank" rel="noreferrer">Rocketseat</a>',
+          ],
+
+          langTitle: 'Idiomas',
+          langs: ['Português — Nativo', 'Inglês — Avançado (C1)'],
+        },
+
+        en: {
+          topbarRole: 'Full-Stack Developer • Resume',
+          langBtnText: 'Português',
+          pdfBtnText: 'Download PDF',
+          headline:
+            'Full-Stack Developer | Node.js | TypeScript | React | Angular | React Native',
+          summaryTitle: 'Professional Summary',
+          summary:
+            'Full-Stack Developer experienced in web and mobile apps, APIs, and integrations. Worked on an industrial/IoT platform with a focus on performance, scalability, and code quality. Strong JavaScript/TypeScript background with React/Angular and Node.js, plus hands-on experience with GraphQL, PostgreSQL, and automated testing.',
+          summaryChips: [
+            'JavaScript/TypeScript',
+            'React / Angular',
+            'Node.js',
+            'GraphQL',
+            'PostgreSQL',
+            'Testing (Playwright)',
+          ],
+          expTitle: 'Experience',
+
+          exp1Title: 'Ubivis — Full-Stack Developer',
+          exp1Date: 'Oct 2023 – Present',
+          exp1Sub: 'São Carlos/Remote • Industrial automation & IoT platform',
+          exp1Bullets: [
+            'Built and maintained web and mobile apps using Angular and React Native.',
+            'Integrated Hasura/GraphQL with PostgreSQL, including subscriptions for real-time data.',
+            'Proposed a PostgreSQL-based communication architecture between the frontend and AI models.',
+            'Implemented E2E test automation with Playwright and test data tooling with Node.js + Prisma.',
+            'Worked in Agile (Scrum), code reviews, and GitLab-based versioning/documentation.',
+          ],
+
+          exp2Title: 'Amigos dos Jardinetes (UTFPR) — Full-Stack Developer',
+          exp2Date: 'Jul 2022 – Dec 2022',
+          exp2Sub: 'Academic project • Web platform with scalable backend',
+          exp2Bullets: [
+            'Developed a React-based frontend for a responsive, interactive UX.',
+            'Built REST APIs with Node.js/Express and modeled data in PostgreSQL.',
+            'Handled deployment on university infrastructure and produced technical documentation.',
+          ],
+
+          exp3Title: 'Ubivis — Android Developer (Intern)',
+          exp3Date: 'Sep 2021 – Sep 2023',
+          exp3Sub: 'Curitiba/Remote • Android apps for industrial environments',
+          exp3Bullets: [
+            'Maintained and delivered Android features using Kotlin/Java (Android Studio).',
+            'Testing, bug fixing, performance improvements, and architecture best practices.',
+            'Managed release cycles and publishing on Google Play with feedback-driven iterations.',
+          ],
+
+          exp4Title:
+            'NÓS — Nosso Olhar Solidário (UTFPR) — Full-Stack Developer',
+          exp4Date: 'Oct 2020 – Mar 2023',
+          exp4Sub: 'Mobile app during COVID • Donations & NGO needs matching',
+          exp4Bullets: [
+            'Built a React Native app connecting donors with registered organizations.',
+            'Backend with Firebase and Node.js/Express, with MongoDB used in parts of the project.',
+            'UI/UX delivery from Figma and teamwork under Scrum.',
+          ],
+
+          skillsTitle: 'Skills',
+          skillsHint: 'Core stack and day-to-day tools:',
+          skills: [
+            'Node.js',
+            'TypeScript',
+            'JavaScript',
+            'React',
+            'Angular',
+            'React Native',
+            'PostgreSQL',
+            'MongoDB',
+            'GraphQL/Hasura',
+            'Docker',
+            'Git/GitLab',
+            'Playwright',
+            'Firebase',
+            'Figma',
+          ],
+
+          eduTitle: 'Education',
+          education: [
+            'BSc in Computer Science — UFSCar (2023 – 2026)',
+            'Computer Engineering — UTFPR (2020 – 2022)',
+          ],
+
+          certTitle: 'Certificates',
+          certs: [
+            'ReactJS — <a href="https://app.rocketseat.com.br/certificates/b4227e4c-6985-4e93-8387-e956c5a97fed" target="_blank" rel="noreferrer">Rocketseat</a>',
+            'GoStack 14 Bootcamp (Node.js, ReactJS, React Native) — <a href="https://app.rocketseat.com.br/certificates/3d090152-ef80-4c8c-b2f4-907c572bd1d8" target="_blank" rel="noreferrer">Rocketseat</a>',
+          ],
+
+          langTitle: 'Languages',
+          langs: ['Portuguese — Native', 'English — Advanced (C1)'],
+        },
+      };
+
+      let currentLang = 'pt';
+
+      function setText(id, value) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.innerHTML = value;
+      }
+
+      function setList(id, items) {
+        const ul = document.getElementById(id);
+        if (!ul) return;
+        ul.innerHTML = items.map((i) => `<li>${i}</li>`).join('');
+      }
+
+      function setBullets(id, items) {
+        const ul = document.getElementById(id);
+        if (!ul) return;
+        ul.innerHTML = items.map((i) => `<li>${i}</li>`).join('');
+      }
+
+      function setChips(id, items) {
+        const wrap = document.getElementById(id);
+        if (!wrap) return;
+        wrap.innerHTML = items
+          .map((i) => `<span class="chip">${i}</span>`)
+          .join('');
+      }
+
+      function render(lang) {
+        const t = DATA[lang];
+        document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+
+        setText('topbarRole', t.topbarRole);
+        setText('langBtnText', t.langBtnText);
+        setText('pdfBtnText', t.pdfBtnText);
+
+        setText('headline', t.headline);
+        setText('sumTitle', t.summaryTitle);
+        setText('summary', t.summary);
+        setChips('summaryChips', t.summaryChips);
+
+        setText('expTitle', t.expTitle);
+
+        setText('exp1Title', t.exp1Title);
+        setText('exp1Date', t.exp1Date);
+        setText('exp1Sub', t.exp1Sub);
+        setBullets('exp1Bullets', t.exp1Bullets);
+
+        setText('exp2Title', t.exp2Title);
+        setText('exp2Date', t.exp2Date);
+        setText('exp2Sub', t.exp2Sub);
+        setBullets('exp2Bullets', t.exp2Bullets);
+
+        setText('exp3Title', t.exp3Title);
+        setText('exp3Date', t.exp3Date);
+        setText('exp3Sub', t.exp3Sub);
+        setBullets('exp3Bullets', t.exp3Bullets);
+
+        setText('exp4Title', t.exp4Title);
+        setText('exp4Date', t.exp4Date);
+        setText('exp4Sub', t.exp4Sub);
+        setBullets('exp4Bullets', t.exp4Bullets);
+
+        setText('skillsTitle', t.skillsTitle);
+        setText('skillsHint', t.skillsHint);
+        setChips('skillsChips', t.skills);
+
+        setText('eduTitle', t.eduTitle);
+        setList('education', t.education);
+
+        setText('certTitle', t.certTitle);
+        setList('certs', t.certs);
+
+        setText('langTitle', t.langTitle);
+        setList('langs', t.langs);
+      }
+
+      document.getElementById('langBtn').addEventListener('click', () => {
+        currentLang = currentLang === 'pt' ? 'en' : 'pt';
+        render(currentLang);
+      });
+
+      document.getElementById('pdfBtn').addEventListener('click', () => {
+        // Most browsers allow "Save as PDF" in the print dialog.
+        window.print();
+      });
+
+      // initial render
+      render(currentLang);
+    </script>
+  </body>
+</html>
